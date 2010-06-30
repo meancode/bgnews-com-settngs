@@ -1,0 +1,219 @@
+id: bgnews
+name: BG News Home/Section Settings
+version: 1.2
+author_name: Ken Edwards, Meancode Media, LLC
+author_link: http://meancode.com/bgviews
+doc_link: http://meancode.com/bgviews
+plugin_link: http://meancode.com/bgviews/bgnews.php
+icon: 'bgviews.gif'
+description: Configuration options for publishing The BG News web site. This plugin includes home page carousel and breaking/features/updates settings for the home page; and section page top story settings.
+
+options:
+  fieldsets:
+    home:
+      label: 'Home Page Carousel'
+    site:
+      label: 'Site Options'
+    feature:
+      label: 'Feature Spotlight'
+    feed:
+      label: 'Feed Options'
+    section:
+      label: 'Section Pages Top Story'
+  carouselslot_one:
+    type: entry
+    label: "Carousel Slot 1"
+    hint: "First carousel slot. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGVCarouselSlotOne'
+    order: 1
+    scope: blog
+    fieldset: home
+  carouselslot_one_label:
+    type: text
+    label: "Slot 1 Label"
+    hint: "The label must be very short or the tabs will wrap to a second line, especially in Windows IE."
+    tag: 'BGVSlotOneLabel'
+    order: 2
+    scope: blog
+    fieldset: home
+  carouselslot_two:
+    type: entry
+    label: "Carousel Slot 2"
+    hint: "Second carousel slot. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGVCarouselSlotTwo'
+    order: 3
+    scope: blog
+    fieldset: home
+  carouselslot_two_label:
+    type: text
+    label: "Slot 2 Label"
+    hint: "The label must be very short or the tabs will wrap to a second line, especially in Windows IE."
+    tag: 'BGVSlotTwoLabel'
+    order: 4
+    scope: blog
+    fieldset: home
+  carouselslot_three:
+    type: entry
+    label: "Carousel Slot 3"
+    hint: "Third carousel slot. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGVCarouselSlotThree'
+    order: 5
+    scope: blog
+    fieldset: home
+  carouselslot_three_label:
+    type: text
+    label: "Slot 3 Label"
+    hint: "The label must be very short or the tabs will wrap to a second line, especially in Windows IE."
+    tag: 'BGVSlotThreeLabel'
+    order: 6
+    scope: blog
+    fieldset: home
+  carouselslot_four: 
+    type: entry
+    label: "Carousel Slot 4"
+    hint: "Fourth carousel slot. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGVCarouselSlotFour'
+    order: 7
+    scope: blog
+    fieldset: home
+  carouselslot_four_label:
+    type: text
+    label: "Slot 4 Label"
+    hint: "The label must be very short or the tabs will wrap to a second line, especially in Windows IE."
+    tag: 'BGVSlotFourLabel'
+    order: 8
+    scope: blog
+    fieldset: home
+  carouselslot_five:
+    type: entry
+    label: "Carousel Slot 5"
+    hint: "Fifth carousel slot. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGVCarouselSlotFive'
+    order: 9
+    scope: blog
+    fieldset: home
+  carouselslot_five_label:
+    type: text
+    label: "Slot 5 Label"
+    hint: "The label must be very short or the tabs will wrap to a second line, especially in Windows IE."
+    tag: 'BGVSlotFiveLabel'
+    order: 10
+    scope: blog
+    fieldset: home
+  breaking_show:
+    type: checkbox
+    label: "Breaking News"
+    hint: "Check this box to display the breaking news teaser on the top of the home page."
+    tag: 'IfBGNBreakingShow?'
+    order: 11
+    fieldset: feature
+  breaking_spotlight:
+    type: entry
+    label: "Breaking Article"
+    hint: "Breaking News headline to display at the top of the home page. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGNBreakingSection'
+    order: 12
+    scope: blog
+    fieldset: feature
+  updates_show:
+    type: checkbox
+    label: "Online Updates"
+    hint: "Check this box to display the online update teaser on the top of the home page."
+    tag: 'IfBGNUpdatesShow?'
+    order: 13
+    fieldset: feature
+  updates_spotlight:
+    type: entry
+    label: "Updated Article"
+    hint: "Online updates headline to display at the top of the home page. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGNUpdatesSection'
+    order: 14
+    scope: blog
+    fieldset: feature
+  feature_show:
+    type: checkbox
+    label: "Featured"
+    hint: "Check this box to display the feature teaser on the top of the home page."
+    tag: 'IfBGNFeatureShow?'
+    order: 15
+    fieldset: feature
+  feature_spotlight:
+    type: entry
+    label: "Featured Article"
+    hint: "Featured story headline to display at the top of the home page. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGNFeatureSection'
+    order: 16
+    scope: blog
+    fieldset: feature
+  campus_spotlightbox:
+    type: entry
+    label: "Campus"
+    hint: "Top story position on the Campus section page of bgnews.com. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGNCampusTopBox'
+    order: 17
+    scope: blog
+    fieldset: section
+  city_spotlightbox:
+    type: entry
+    label: "City"
+    hint: "Top story position on the City section page of bgnews.com. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGNCityTopBox'
+    order: 18
+    scope: blog
+    fieldset: section
+  sports_spotlightbox:
+    type: entry
+    label: "Sports"
+    hint: "Top story position on the Sports section page of bgnews.com. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGNSportsTopBox'
+    order: 19
+    scope: blog
+    fieldset: section
+  wire_spotlightbox:
+    type: entry
+    label: "Regional"
+    hint: "Top story position on the Regional section page of bgnews.com. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGNWireTopBox'
+    order: 20
+    scope: blog
+    fieldset: section
+  opinion_spotlightbox:
+    type: entry
+    label: "Opinion"
+    hint: "Top story position on the Opinion section page of bgnews.com. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGNOpinionTopBox'
+    order: 21
+    scope: blog
+    fieldset: section
+  entertainment_spotlightbox:
+    type: entry
+    label: "Entertainment"
+    hint: "Top story position on the Entertainment section page of bgnews.com. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGNEntertainmentTopBox'
+    order: 22
+    scope: blog
+    fieldset: section
+  infocus_spotlightbox:
+    type: entry
+    label: "In Focus"
+    hint: "Top story position on the In Focus section page of bgnews.com. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGNInFocusTopBox'
+    order: 23
+    scope: blog
+    fieldset: section
+  breaking_spotlightbox:
+    type: entry
+    label: "Breaking News"
+    hint: "Top story position on the Breaking News section page of bgnews.com. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGNBreakingNewsTopBox'
+    order: 24
+    scope: blog
+    fieldset: section
+  updates_spotlightbox:
+    type: entry
+    label: "Online Updates"
+    hint: "Top story position on the Online Updates section page of bgnews.com. Click Choose Entry and pick an entry from the list, or use the search box.."
+    tag: 'BGNOnlineUpdatesTopBox'
+    order: 25
+    scope: blog
+    fieldset: section
